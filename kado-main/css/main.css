@@ -20,6 +20,39 @@ body {
   perspective: 1000px;
 }
 
+.overlay-text {
+  position: absolute;
+  top: 20%;               /* Atur posisi vertikal */
+  left: 50%;              /* Atur posisi horizontal */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;           /* Warna teks */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Agar terbaca di atas latar */
+  pointer-events: none;   /* Agar animasi tetap bisa diklik/back-interaksi jika ada */
+  z-index: 1000;          /* Pastikan di atas semua elemen animasi */
+}
+
+.overlay-text {
+  opacity: 0;
+  animation: fadeInText 5s forwards;
+  animation-delay: 1s; /* jika ingin delay muncul */
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to   { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+.overlay-text h1 {
+  font-size: 1.5em;
+  margin: 0.2em 0;
+}
+
+.overlay-text p {
+  font-size: 1.0em;
+  margin: 0;
+}
+
 .night {
   position: fixed;
   left: 50%;
