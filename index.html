@@ -27,7 +27,7 @@
 
     /* 🔥 Judul di atas tombol */
     #birthdaySection h1 {
-      font-size: 2.4rem;
+      font-size: 1.4rem;
       font-weight: bold;
       color: #b30059; /* warna magenta tua */
       margin-bottom: 25px;
@@ -192,7 +192,7 @@
 
       if (!sayang) return stopMusic1();
 
-      await swals.fire("Ciee... udah makin dewasa aja nih 😄");
+      await swals.fire("Ciee... ada yang nambah tua aja nih 😜😆😄");
 
       var { value: umur } = await swals.fire({
         title: "Kamu ulang tahun yang ke berapa?",
@@ -203,8 +203,9 @@
       });
 
       await swals.fire(`Selamat ya 🎉 Di umur ${umur} semoga hari-harimu penuh kebahagiaan 🌸`);
+      await swals.fire("Kamu tambah tua, tapi tetep aja cantik😍 & manis kayak gulali 🍭💕");
       await swals.fire("Semoga semua harapanmu tahun ini bisa terwujud 💫");
-      await swals.fire("Sehat dan sukses selalu ya ❤️");
+      await swals.fire("Dan semoga kamu selalu sehat, sukses, dan dikelilingi hal - hal baik ❤️");
       await swals.fire("Sekarang, coba klik ikon hati di bawah ini ya 💖");
 
       document.getElementById("button").style.display = "none";
@@ -253,6 +254,7 @@
   </script>
 </body>
 </html>
+
 
 
 
